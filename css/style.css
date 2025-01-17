@@ -1,0 +1,77 @@
+/* <div class="container">
+        <h1> Meet our team </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores tempora dolorum in, unde nam earum esse eaque quas quos, modi tempore. Animi minus quidem atque vitae, ducimus asperiores aperiam! </p>
+        <div id="team">
+        <div class="img-box">
+        <img src="${img}" alt="${name}">
+      </div>
+      <div class="text-box">
+        <h4 class="name"> ${name.toUpperCase()} </h4>
+        <p class="role"> ${role}</p>
+        <a href="#" class="email"> ${email} </a>
+      </div>;
+        </div>
+    </div> */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Nunito", serif;
+}
+
+.title {
+    text-align: center;
+    color: #EC2E6E;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 18px;
+}
+
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member {
+    display: flex;
+    width: 30%;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.img-box {
+    height: 100%;
+    width: 120px;
+}
+
+.img-box img {
+    height: 100%;
+    width: auto;
+}
+
+.text-box {
+    width: 500px;
+    background-color: #000000;
+    color: white;
+    padding-left: 30px;
+}
+
+.name {
+    margin: 20px 0 0 0;
+}
+
+.role {
+    margin: 6px 0 10px 0;
+}
+
+.email {
+    text-decoration: none;
+    color: lightblue;
+}

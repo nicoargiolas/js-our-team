@@ -50,12 +50,14 @@ let counter = teamMembers.length;
 for (let i = 0; i < counter; i++) {
   const {name, role, email, img} = teamMembers[i];
   teamHTML.innerHTML +=`
-  <div class="img-box">
-      <img src="${img}" alt="${name}">
+  <div class="member">
+    <div class="img-box">
+        <img src="${img}" alt="${name}">
     </div>
     <div class="text-box">
       <h4 class="name"> ${name.toUpperCase()} </h4>
-      <p class="role"> ${role}</p>
+      <p class="role"> ${role} </p>
       <a href="#" class="email"> ${email} </a>
-    </div>`;
+    </div>
+  </div>`;
 }
